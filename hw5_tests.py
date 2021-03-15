@@ -175,9 +175,9 @@ class TestCard(unittest.TestCase):
         '''
         c1 = hw5_cards.Deck()
         c1.deal_card()
-        X = len(c1.cards)-1
+        X = len(c1.cards)+1
         c1.replace_card(c1.cards[0])
-        Y = len(c1.cards)-1
+        Y = len(c1.cards)+1
         self.assertEqual(X,Y)
         return X, Y
 
